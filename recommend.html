@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="icon" href="./images/icon.icon">
+
+    <!-- 引入mui框架  -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <!-- 引入本页面样式 -->
+    <link rel="stylesheet/less" href="./less/recommend.less">
+    <!--  引入less文件 -->
+    <script src="./lib/less/less.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <header id="header">
+       <a href="javascript:history.back(-1)" class="fa fa-arrow-left "></a>
+       <span>国内折扣</span>
+        <a href="" class="mui-pull-right">
+            <img src="https://img.alicdn.com/imgextra/i2/690311/TB2beKvaTXYBeNkHFrdXXciuVXa_!!690311.png" alt="">
+        </a>
+    </header>
+
+    <!-- 中间商品部分 -->
+    <form action="" id="detail-form">
+        
+    </form>
+    
+    <div id="nav-bottom">
+
+    </div>
+
+    <!-- 底部栏 -->
+    <footer id="footer">
+        <div class="f-top mui-row">
+            <a href="" class="mui-col-xs-4">登录</a>
+            <a href="" class="mui-col-xs-4 register">注册</a>
+            <a href="" class="mui-col-xs-4"><span class="fa fa-arrow-circle-o-up"></span>返回顶部</a>
+        </div>
+        <div class="f-botom">
+            <span>手机APP下载 </span>
+            <i>慢慢买手机版 -- 掌上比价平台</i>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+
+    
+    <script id="detailTmp" type="text/html">
+        {{each result as value i}}
+        <div class="container">
+            <h3 class="detail-name">
+                {{value.productName}}
+            </h3>
+            <h4 class="detail-price">
+                {{value.productPinkage }}
+            </h4>
+            <div class="detail-info">
+                <span class="datail-from">
+                    {{value.productFrom}}
+                </span>
+                <span class="datail-time">
+                    {{value.productTime}}
+                </span>
+                <span class="datail-tips">
+                    {{value.productTips}}
+                </span> 
+                <span class="author"><a href="#" style="color:#4682c5;">{{value.productComCount}}</a>
+                </span>    
+
+            </div>
+            <div class="detail-info2 mui-row">
+                <div class="mui-col-xs-8">
+                    <span>
+                        {{value.productInfo2}}
+                    </span>
+                    <a href="">点击领取5元优惠券</a>
+                </div>
+                <div class="mui-col-xs-4">
+                    {{#value.productImg2}}
+                </div>
+            </div>
+            <div class="cityList">
+                {{#value.productCity}}
+            </div>
+            <div class="to-buy">
+                <a href="#">
+                    <i class="fa fa-cart-arrow-down"><span>前往购买</span></i>
+                </a>
+            </div>
+        </div>
+        <div class="comment">
+            {{#value.productComment}}
+        </div>
+        {{/each}}
+    </script>
+    <script id="nameTmp" type="text/html">
+        {{each result as value i}}
+        <a href="index.html">首页 ></a>
+        <a href="./national-discount.html">国内折扣 ></a>
+        <div class="a-box">
+            <a href="">{{value.productName}}</a>
+        </div>
+        {{/each}}
+    </script>
+
+
+
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="./lib/artTemplate/template.js"></script>
+    <script src="./lib/jquery/jquery-1.12.4.min.js"></script>
+    <script src="./js/recommend.js"></script>
+    
+</body>
+</html>

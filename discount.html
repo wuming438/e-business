@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="icon" href="./images/icon.icon">
+
+    <!-- 引入mui框架  -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">  
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+     <!-- 引入Bootstrap样式 -->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <!-- 引入本页面样式 -->
+    <link rel="stylesheet/less" href="./less/discount.less">
+    <!--  引入less文件 -->
+    <script src="./lib/less/less.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <header id="header">
+        <!-- <a href="" class="mui-pull-left">
+            <img src="https://img.alicdn.com/imgextra/i1/690311/TB2cMR0aQUmBKNjSZFOXXab2XXa_!!690311.png" alt="">
+        </a>
+        <a href="" class="mui-pull-right">
+            <img src="https://img.alicdn.com/imgextra/i2/690311/TB2beKvaTXYBeNkHFrdXXciuVXa_!!690311.png" alt="">
+        </a> -->
+        <a href="javascript:history.back(-1);" class="return fa fa-arrow-left"></a>
+        <h4>海淘折扣</h4>
+        <a href="#" class="icon-app"></a>
+    </header>
+
+    <!-- 搜索栏 -->
+    <!-- <div id="seach">
+        <input type="text" name="" id="" placeholder="客官请输入">
+        <a href="#">搜索</a>
+    </div> -->
+
+<main id="main">
+    <!-- 回弹模块区域 -->
+    <div class="mui-scroll-wrapper">
+        <div class="mui-scroll">
+            <!-- 轮播图区域 -->
+            <section class="banner">
+                <div id="slider" class="mui-slider" >
+                    <div class="mui-slider-group mui-slider-loop">
+                        <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+                        <div class="mui-slider-item mui-slider-item-duplicate">
+                            <a href="#">
+                                <img src="./images/banner3.jpg">
+                            </a>
+                        </div>
+                        <!-- 第一张 -->
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="./images/banner1.jpg">
+                            </a>
+                        </div>
+                        <!-- 第二张 -->
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="./images/banner2.jpg">
+                            </a>
+                        </div>
+                        <!-- 第三张 -->
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="./images/banner3.jpg">
+                            </a>
+                        </div>
+                        <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+                        <div class="mui-slider-item mui-slider-item-duplicate">
+                            <a href="#">
+                                <img src="./images/banner1.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mui-slider-indicator">
+                        <div class="mui-indicator mui-active"></div>
+                        <div class="mui-indicator"></div>
+                        <div class="mui-indicator"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- 超级人气榜单 -->
+            <section id="moods">
+                <!-- 人气榜单头部 -->
+                <div class="moods-header mui-clearfix">
+                    <h4>超级人气榜</h4>
+                    <a href="#" class="modds-more">更多</a>
+                </div>
+                <!-- 人气榜单主体内容 -->
+                <div id="moods-body">
+                    <div id="moods-list" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+                        <ul class="mui-scroll">
+                            <li class="mui-control-item moods-list mui-active">
+                                <a href="#">
+                                    <img src="https://img.alicdn.com/imgextra/i3/695768367/TB2RwcFxctnpuFjSZFKXXalFFXa_!!695768367.jpg_310x310.jpg" alt="">
+                                </a>
+                                <p class="title">超轻粘土24色36色无毒橡皮泥彩泥太空雪花泥手工黏土套装儿童玩具</p>
+                                <p class="info">
+                                    <span class="price">
+                                            ￥ <i>7.9</i>
+                                    </span>
+                                    <span class="title">卷后</span>
+                                </p>
+                            </li>
+                            <li class="mui-control-item moods-list">
+                                    <a href="#">
+                                        <img src="https://img.alicdn.com/imgextra/i3/695768367/TB2RwcFxctnpuFjSZFKXXalFFXa_!!695768367.jpg_310x310.jpg" alt="">
+                                    </a>
+                                    <p class="title">超轻粘土24色36色无毒橡皮泥彩泥太空雪花泥手工黏土套装儿童玩具</p>
+                                    <p class="info">
+                                        <span class="price">
+                                                ￥ <i>7.9</i>
+                                        </span>
+                                        <span class="title">卷后</span>
+                                    </p>
+                            </li>
+                            <li class="mui-control-item moods-list">
+                                    <a href="#">
+                                        <img src="https://img.alicdn.com/imgextra/i3/695768367/TB2RwcFxctnpuFjSZFKXXalFFXa_!!695768367.jpg_310x310.jpg" alt="">
+                                    </a>
+                                    <p class="title">超轻粘土24色36色无毒橡皮泥彩泥太空雪花泥手工黏土套装儿童玩具</p>
+                                    <p class="info">
+                                        <span class="price">
+                                                ￥ <i>7.9</i>
+                                        </span>
+                                        <span class="title">卷后</span>
+                                    </p>
+                            </li>
+                            <li class="mui-control-item moods-list">
+                                    <a href="#">
+                                        <img src="https://img.alicdn.com/imgextra/i3/695768367/TB2RwcFxctnpuFjSZFKXXalFFXa_!!695768367.jpg_310x310.jpg" alt="">
+                                    </a>
+                                    <p class="title">超轻粘土24色36色无毒橡皮泥彩泥太空雪花泥手工黏土套装儿童玩具</p>
+                                    <p class="info">
+                                        <span class="price">
+                                                ￥ <i>7.9</i>
+                                        </span>
+                                        <span class="title">卷后</span>
+                                    </p>
+                            </li>
+                            <li class="mui-control-item moods-list">
+                                    <a href="#">
+                                        <img src="https://img.alicdn.com/imgextra/i3/695768367/TB2RwcFxctnpuFjSZFKXXalFFXa_!!695768367.jpg_310x310.jpg" alt="">
+                                    </a>
+                                    <p class="title">超轻粘土24色36色无毒橡皮泥彩泥太空雪花泥手工黏土套装儿童玩具</p>
+                                    <p class="info">
+                                        <span class="price">
+                                                ￥ <i>7.9</i>
+                                        </span>
+                                        <span class="title">卷后</span>
+                                    </p>
+                            </li>
+                            <li class="mui-control-item moods-list">
+                                    <a href="#">
+                                        <img src="https://img.alicdn.com/imgextra/i3/695768367/TB2RwcFxctnpuFjSZFKXXalFFXa_!!695768367.jpg_310x310.jpg" alt="">
+                                    </a>
+                                    <p class="title">超轻粘土24色36色无毒橡皮泥彩泥太空雪花泥手工黏土套装儿童玩具</p>
+                                    <p class="info">
+                                        <span class="price">
+                                                ￥ <i>7.9</i>
+                                        </span>
+                                        <span class="title">卷后</span>
+                                    </p>
+                            </li>
+                            <li class="mui-control-item moods-list">
+                                    <a href="#">
+                                        <img src="https://img.alicdn.com/imgextra/i3/695768367/TB2RwcFxctnpuFjSZFKXXalFFXa_!!695768367.jpg_310x310.jpg" alt="">
+                                    </a>
+                                    <p class="title">超轻粘土24色36色无毒橡皮泥彩泥太空雪花泥手工黏土套装儿童玩具</p>
+                                    <p class="info">
+                                        <span class="price">
+                                                ￥ <i>7.9</i>
+                                        </span>
+                                        <span class="title">卷后</span>
+                                    </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+             <!-- 海淘头条 -->
+             <div id="headline">
+                    <h4 class="headline-title">
+                        海淘头条
+                    </h4>
+                <div id="demo">
+                        <ul id="demo1" >    
+                            <li><a href="#">夏季男士短袖t恤圆领 ￥20</a></li>  
+                            <li><a href="#">海福盛速食粥10杯装 ￥7.9</a></li>  
+                            <li><a href="#">夏季男士短袖t恤圆领 ￥20</a></li>  
+                            <li><a href="#">海福盛速食粥10杯装 ￥7.9</a></li>  
+                        </ul>   
+                        <div id="demo2"></div>  
+                </div>
+            </div>
+            <!-- 主要内容区域 -->
+            <section id="contain">
+                    <ul class="mui-table-view">
+                            <li class="mui-table-view-cell mui-media">
+                                <a href="javascript:;">
+                                    <img class="mui-media-object mui-pull-left" src="http://img2017.manmanbuy.com/Thumb_2018030019334136057.PNG">
+                                    <div class="mui-media-body">
+                                        <div class="title">
+                                              
+                                        </div>
+                                        <p class='mui-ellipsis'>
+                                            <span class="mall"> | {{}}</span>
+                                        </p>
+                                        <span class="comment">
+                                                <i class="fa fa-commenting-o"></i>
+                                                0
+                                            </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell mui-media">
+                                    <a href="javascript:;">
+                                        <img class="mui-media-object mui-pull-left" src="http://img2017.manmanbuy.com/Thumb_2018030019334136057.PNG">
+                                        <div class="mui-media-body">
+                                            <div class="title">
+                                                    回力 春夏季休闲运动蓝球鞋学生情侣
+                                                    <span>39元包邮（券后）</span> 
+                                            </div>
+                                            <p class='mui-ellipsis'>
+                                                <span class="mall">天猫商城 | 03-25 19:41</span>
+                                            </p>
+                                            <span class="comment">
+                                                    <i class="fa fa-commenting-o"></i>
+                                                    0
+                                                </span>
+                                        </div>
+                                    </a>
+                            </li>
+                            <li class="mui-table-view-cell mui-media">
+                                    <a href="javascript:;">
+                                        <img class="mui-media-object mui-pull-left" src="http://img2017.manmanbuy.com/Thumb_2018030019334136057.PNG">
+                                        <div class="mui-media-body">
+                                            <div class="title">
+                                                    回力 春夏季休闲运动蓝球鞋学生情侣
+                                                    <span>39元包邮（券后）</span> 
+                                            </div>
+                                            <p class='mui-ellipsis'>
+                                                <span class="mall">天猫商城 | 03-25 19:41</span>
+                                            </p>
+                                            <span class="comment">
+                                                    <i class="fa fa-commenting-o"></i>
+                                                    0
+                                                </span>
+                                        </div>
+                                    </a>
+                            </li>
+                            <li class="mui-table-view-cell mui-media">
+                                    <a href="javascript:;">
+                                        <img class="mui-media-object mui-pull-left" src="http://img2017.manmanbuy.com/Thumb_2018030019334136057.PNG">
+                                        <div class="mui-media-body">
+                                            <div class="title">
+                                                    回力 春夏季休闲运动蓝球鞋学生情侣
+                                                    <span>39元包邮（券后）</span> 
+                                            </div>
+                                            <p class='mui-ellipsis'>
+                                                <span class="mall">天猫商城 | 03-25 19:41</span>
+                                            </p>
+                                            <span class="comment">
+                                                    <i class="fa fa-commenting-o"></i>
+                                                    0
+                                                </span>
+                                        </div>
+                                    </a>
+                            </li>
+                        </ul>
+
+            </section>
+            <!-- 分页区域 -->
+            <section id="paging">
+                <div class="mui-content-padded">
+                        <ul class="mui-pager">
+                            <li class="mui-previous">
+                                <a href="#">
+                                    上一页
+                                </a>
+                            </li>
+                            <li>
+                            <select class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                            </select>
+                            </li>
+                            <li class="mui-next">
+                                <a href="#">
+                                    下一页
+                                </a>
+                            </li>
+                        </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+    
+    <!-- 底部栏 -->
+    <footer id="footer">
+            <div class="f-top mui-row">
+                <a href="" class="mui-col-xs-4">登录</a>
+                <a href="" class="mui-col-xs-4 register">注册</a>
+                <a href="" class="mui-col-xs-4 back-top">
+                    <span class="fa fa-arrow-circle-o-up"></span> 返回顶部</a>
+            </div>
+            <div class="f-botom">
+                <span>手机APP下载 </span>
+                <i>慢慢买手机版 -- 掌上比价平台</i>
+                <p>m.manmanbuy.com</p>
+            </div>
+    </footer>
+    <script type="text/html" id="product">
+        {{each result as value i}}
+        <li class="mui-table-view-cell mui-media">
+            <a href="./recommend.html?id={{value.productId}}" data-id="{{value.productId}}">
+                {{#value.productImgSm}}
+                <!-- <img class="mui-media-object mui-pull-left" src="http://img2017.manmanbuy.com/Thumb_2018030019334136057.PNG"> -->
+                <div class="mui-media-body">
+                    <div class="title">
+                        {{value.productName}}
+                    </div>
+                    <p class='mui-ellipsis'>
+                        <span class="mall">{{value.productFrom}} | {{value.productTime}}</span>
+                    </p>
+                    <span class="comment">
+                            <i class="fa fa-commenting-o"></i>
+                            {{value.productComCount.replace("有","").replace("人评论","")}}
+                        </span>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <script type="text/html" id="moodsBody">
+        {{each result as value i}}
+        <li class="mui-control-item moods-list mui-active">
+                <a href="javascript:;">
+                    <!-- <img src="https://img.alicdn.com/imgextra/i3/695768367/TB2RwcFxctnpuFjSZFKXXalFFXa_!!695768367.jpg_310x310.jpg" alt=""> -->
+                    {{#value.productImgSm}}
+
+                </a>
+                <p class="title">{{value.productName}}</p>
+                <p class="info">
+                    <span class="price">
+                            ￥ <i>{{value.productPinkage}}</i>
+                    </span>
+                </p>
+            </li>
+        {{/each}}
+    </script>
+    <script type="text/html" id="pages">
+        <ul class="mui-pager">
+                
+                <li class="mui-previous">
+                    <bottom data-page="{{page--}}">
+                        上一页
+                    </bottom>
+                </li>
+                <li>
+                    <select class="form-control">
+                            {{each pageClude as value i}}
+                            <option class="pages" data-ye="{{value}}">{{value}}</option>
+                            {{/each}}
+                    </select>
+                </li>
+                <li class="mui-next">
+                    <bottom data-page="{{page++}}">
+                        下一页
+                    </bottom>
+                </li>
+              
+        </ul>        
+
+    
+    </script>
+    <script src="./lib/jquery/jquery-1.12.4.min.js"></script>
+    <script src="./lib/jquery/jquery.toTop.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="./lib/artTemplate/template.js"></script>
+    <script src="./js/discount.js"></script>
+</body>
+</html>
+<!-- <script>
+    $(function(){
+        $.ajax({
+            url:'http://mmb.ittun.com/api/getmoneyctrl',
+            success: function(data){
+                console.log(data.result[0].productFrom
+
+);
+            }
+        })
+    })
+</script> -->

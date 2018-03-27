@@ -1,0 +1,94 @@
+@import './base.less';
+@import './discounts.less';
+
+#main{
+    .promotion{
+        font-size: 12px;
+        text-align: center;
+        color: #999;
+        margin: 8px 0px;
+    }
+    .mui-table-view{
+        .mui-navigate-right:after, 
+        .mui-push-right:after{
+            right: 0;
+            font-size: 25px;
+        }
+        .mui-media-object{
+            max-width: 100px;
+            height: 80px;
+            line-height: 80px;
+            >img{
+                max-width: 100px;
+                height: 80px;
+                line-height: 80px 
+            }
+        }
+        .mui-media-body{
+            // white-space: normal;
+            .product-name{
+                white-space: normal;
+                line-height: 20px;
+                font-size: 14px;
+                color: #333;
+            }
+            .price{
+                color: #333;
+                font-weight: 600;
+            }
+            .date{
+                color: #ff841d;
+                font-size: 12px;
+                margin-top: 10px;
+            }   
+        }   
+    }
+    .mui-slider{
+        .mui-slider-group{
+            >div{
+                >a{
+                    >img{
+                        max-width: 150px;
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#lunbao{
+    position: fixed;
+    width: 100%;
+    height: 1500px;
+    background-color: #313333;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    display: flex;
+    display: none ;
+    justify-content: space-around;
+    // filter:alpha(opacity:90);
+    background:rgba(49, 51, 51,0.9);
+    //  align-items: baseline;
+    #carousel-example-generic{
+        margin-top: 200px;
+        width: 200px;
+        height: 160px;
+        overflow: hidden;
+        .carousel-inner{ 
+            opacity: 1; 
+            >div{
+                float: left;
+                margin: 0 auto;
+                >img{
+                    // 
+                    width: 200px;
+                    height: 160px;
+                }
+            }
+        }
+    }
+    
+
+}

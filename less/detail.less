@@ -1,0 +1,200 @@
+@import 'base.less';
+
+html, body {
+    height: 100%;
+}
+//头部样式
+#header {
+    text-align: center;
+    overflow: hidden;
+    // height: 30px;
+    
+    >a:nth-child(1) {
+        float: left;
+        color: #fff;
+        line-height: 30px;
+        font-size: 18px;
+    }
+    >span:nth-child(2) {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    a {
+        float: right;
+    }
+}
+
+// 中间区域
+#detail-form { 
+    padding: 5px 10px;
+    .container {
+        padding: 0;
+        >h3 {
+            margin: 10px 0;
+            font-weight: bold;
+            color: 15px;
+        }
+        >h4 {
+            margin: 10px 0;
+            color: #ff841d;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        >.detail-info {
+            font-size: 13px;
+            color: #a6a6a6;
+            margin: 10px 0;
+        }
+        .detail-info2 {
+            .mui-col-xs-8 {
+                line-height: 25px;
+                font-size: 16px;
+                color:#606060;
+                >a {
+                    display: block;
+                }
+            }
+            .mui-col-xs-4 {
+                >img {
+                  width: 100%;
+                  height: auto;  
+                }
+            }
+        }
+        .cityList {
+            margin-top: 10px;
+            width: 200px;
+            #disstorck {
+                border: 1px solid #fff;
+                box-shadow: 0 0 5px ;
+                padding: 10px;
+                li {
+                    margin: 3px 0;
+                    border-bottom: 1px dashed #555;
+                    line-height: 20px;
+                }
+                span {
+                    margin-left: 10px;
+                    strong {
+                        float: right;
+                        color: #ff9000;
+                        margin-right: 10px;
+                    }
+                }
+                
+            }
+        }
+        .to-buy {
+            padding: 20px 10px;
+            >a {
+                display: block;
+                text-align: center;
+                background-color: #ff9000;
+                height: 40px;
+                color: #fff;
+                line-height: 40px;
+                border-radius: 5px;
+            }
+        }
+    }
+    .comment {
+        .form {
+            margin: 10px 0;
+            border: 2px solid #e6e6e6;
+            >textarea {
+                border: none;
+                outline: none;
+                height: 100px;
+                overflow-x: hidden;
+                overflow-y: auto;
+            }
+            .ctrl {
+                height: 40px;
+                overflow: hidden;
+                width: 100%;
+                background-color: #fbfbfb;
+                >input {
+                    height: 100%;
+                    float: right;
+                    background-color:#ff9000;
+                    width: 150px;
+                    color: #fff;
+                    border: none;
+                }
+            }
+        }
+        #newcomment {
+            margin-bottom: 20px;
+        }
+        .list {
+            // height: 2000px;
+            li {
+                position: relative;
+                width: 100%;
+                margin-bottom: 40px;
+            }
+            .userimg {
+                width: 40px;
+                height: 40px;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .con {
+                width: 100%;
+                margin-top: 5px;
+                line-height: 25px;
+                .time {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+                .username {
+                    position: absolute;
+                    top: 0;
+                    left: 50px;
+                    color: #67a0c5;
+                }
+                .content {
+                    word-wrap:break-word;
+                    word-break:break-all;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+#nav-bottom {
+    padding: 0 10px;
+    height: 40px;
+    background: linear-gradient(to top,#ccc,#fff);
+    line-height: 40px;
+    a {
+        color: black;
+        display: inline-block;
+        font-size: 14px;
+        height: 40px;
+    }
+    .a-box {
+        // float: left;
+        width: 150px; 
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        height: 40px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+
+// 底部样式
+#footer {
+    background-color: #ccc;
+    i{
+        font-style: normal;
+    }
+}

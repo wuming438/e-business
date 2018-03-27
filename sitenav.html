@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="icon" href="./images/icon.icon">
+
+      <!-- 引入字体图标 -->
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+
+    <!-- 引入mui框架  -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+  
+    <!-- 引入本页面样式 -->
+    <link rel="stylesheet/less" href="./less/sitenav.less">
+    <!--  引入less文件 -->
+    <script src="./lib/less/less.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <header id="header">
+        <a href="javascript:history.back(-1)" class="mui-pull-left fa fa-chevron-left">
+        </a>
+        <h4>商城导航</h4>
+        <a href="" class="mui-pull-right">
+            <img src="https://img.alicdn.com/imgextra/i2/690311/TB2beKvaTXYBeNkHFrdXXciuVXa_!!690311.png" alt="">
+        </a>
+    </header>
+
+    <main id="main">
+        <div class="link mui-clearfix ">
+            <a href="#" target="_target">
+                <img src="http://sf.manmanbuy.com/images/sitelogo/1.png" alt="">
+                京东商城
+            </a>
+        </div>
+    </main>
+    
+    <!-- 底部栏 -->
+    <footer id="footer">
+        <div class="nav">
+            首页>商品导航
+        </div>
+        <div class="f-top mui-row">
+            <a href="./login.html" class="mui-col-xs-4">登录</a>
+            <a href="./register.html" class="mui-col-xs-4 register">注册</a>
+            <a href="" class="mui-col-xs-4"><span class="fa fa-arrow-circle-o-up"></span>返回顶部</a>
+        </div>
+        <div class="bottomload">
+            <a href="./index.html" class="mobile-app">手机App下载</a>
+            <a href="#" class="mmm-app">慢慢买手机版</a>
+            <span>--掌上比价平台</span>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+
+    <!-- 创建慢慢买商城列表页面的模板 -->
+    <script type="text/html" id="shoppingListTmp">
+    {{each result as value i}}
+        <a href="{{value.navHref}}" target="_target" data-id="{{value.navId}}">
+                <img src="{{value.navImg}}" alt="">
+                {{value.navTitle}}
+        </a>  
+    {{/each}}
+    </script>
+    <script src="lib/jquery/jquery-1.12.4.min.js"></script>
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="lib/artTemplate/template.js"></script>
+    <script src="js/sitenav.js"></script>
+    
+</body>
+</html>

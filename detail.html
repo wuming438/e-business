@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+
+    <link rel="icon" href="./images/m.png">
+
+    <!-- 引入图标库 -->
+    <link rel="icon" href="./images/favicon.ico">
+    <!-- 引入mui css样式 -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <!-- bootstrap css样式 -->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <!-- 引入自己的样式css -->
+    <link rel="stylesheet/less" href="./less/detail.less">
+    <!-- 引入less的js文件 -->
+    <script src="./lib/less/less.js"></script>
+    <!-- 引入字体图标库 -->
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header id="header">
+        <a href="./inlanddiscount.html" class="fa fa-chevron-left return-btn"></a>
+        <span>国内折扣</span>
+        <a href="" class="mui-pull-right">
+            <img src="https://img.alicdn.com/imgextra/i2/690311/TB2beKvaTXYBeNkHFrdXXciuVXa_!!690311.png" alt="">
+        </a>
+
+    </header>
+    <!-- 中间区域 -->
+    <form action="" id="detail-form">
+
+    </form>
+    <div id="nav-bottom">
+
+    </div>
+
+    <!-- 底部栏 -->
+    <footer id="footer">
+        <div class="f-top mui-row">
+            <a href="" class="mui-col-xs-4">登录</a>
+            <a href="" class="mui-col-xs-4 register">注册</a>
+            <a href="" class="mui-col-xs-4 back-top">
+                <span class="fa fa-arrow-circle-o-up"></span> 返回顶部</a>
+        </div>
+        <div class="f-botom">
+            <span>手机APP下载 </span>
+            <i>慢慢买手机版 -- 掌上比价平台</i>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+
+    <script id="detailTmp" type="text/html">
+        {{each result as value i}}
+        <div class="container">
+            <h3 class="detail-name">
+                {{value.productName}}
+            </h3>
+            <h4 class="detail-price">
+                {{value.productPrice}}
+            </h4>
+            <div class="detail-info">
+                <span class="datail-from">
+                    {{value.productFrom}}
+                </span>
+                <span class="datail-time">
+                    {{value.productTime}}
+                </span>
+                <span class="datail-tips">
+                    {{value.productTips}}
+                </span>
+            </div>
+            <div class="detail-info2 mui-row">
+                <div class="mui-col-xs-8">
+                    <span>
+                        {{value.productInfo}}
+                    </span>
+                    <a href="">点击领取5元优惠券</a>
+                </div>
+                <div class="mui-col-xs-4">
+                    {{#value.productImg}}
+                </div>
+            </div>
+            <div class="cityList">
+                {{#value.productCity}}
+            </div>
+            <div class="to-buy">
+                <a href="#">前往购买</a>
+            </div>
+        </div>
+        <div class="comment">
+            {{#value.productComment}}
+        </div>
+        {{/each}}
+    </script>
+    <script id="nameTmp" type="text/html">
+        {{each result as value i}}
+        <a href="index.html">首页 ></a>
+        <a href="./national-discount.html">国内折扣 ></a>
+        <div class="a-box">
+            <a href="">{{value.productName}}</a>
+        </div>
+        {{/each}}
+    </script>
+
+
+    <!-- 引入jquery文件 -->
+    <script src="./lib/jquery/jquery-1.12.4.min.js"></script>
+    <!-- 引入bootstrap需要的js文件 -->
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <!-- 引入模板需要的js文件 -->
+    <script src="./lib/artTemplate/template.js"></script>
+    <!-- 引入自己js文件 -->
+    <script src="./js/detail.js"></script>
+
+    <script src="./lib/jquery/jquery.toTop.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+@import 'base.less';
+body {
+    position: relative;
+    #preparation {
+        width: 50px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        background-color: #eee;
+        border: 1px solid #ddd;
+        border-radius: 10%;
+        position: absolute;
+        right: 10px;
+        top: 103px;
+    }
+}
+
+#main {
+    background-color: #fff;
+    height: 100%;
+    .path {
+        .breadcrumb {
+            margin: 0;
+            border-bottom: 1px solid #ccc;
+            .active{
+                width: 150px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                vertical-align: middle;
+            }
+        }
+    }
+    .breadcrumb>li+li:before {
+        content: "\3E";
+    }
+    .product {
+        padding: 20px;
+        position: relative;
+        .introduction {
+            margin-bottom: 50px;
+            position: relative;
+            p {
+                color: #000;
+                font-size: 16px;
+                text-align: center;
+            }
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+            .collect {
+                width: 44px;
+                height: 44px;
+                background: radial-gradient(rgb(6, 240, 56), rgb(6, 241, 131));
+                ;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 44px;
+                position: absolute;
+                right: 0;
+                bottom: 0px;
+            }
+        }
+    }
+    .option {
+        position: relative;
+        top: 0px;
+        width: 100%;
+        ul {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: flex; // justify-content: center;
+            width: 100%;
+            li {
+                width: 33.3333%;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                background-color: #ffc526;
+                border: 1px solid #f83040;
+                &:first-child {
+                    background-color: #ff9c1d;
+                }
+            }
+        }
+    }
+}
+
+#commont {
+    // .bjshop {
+    // padding: 10px;
+    // width: 100%;
+    table {
+        tbody {
+            tr {
+                td {
+                    height: 50px;
+                    line-height: 50px;
+                }
+                .p_pic {
+                    float: left;
+                }
+                td:nth-child(2) {
+                    float: left;
+                    a {
+                        color: #000;
+                        font-size: 16px;
+                        text-decoration: none;
+                        width: auto;
+                    }
+                }
+                .red {
+                    color: red;
+                    font-size: 18px;
+                    position: absolute;
+                    right: 100px;
+                }
+                td:last-child {
+                    float: right;
+                }
+            }
+            .tab2 {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                td {
+                    height: 100px;
+                    width: 100%;
+                    &:first-child {
+                        .bgcolor;
+                        padding: 20px;
+                        height: auto;
+                        &::before {
+                            display: block;
+                            content: "用户评价";
+                            color: #fff;
+                            font-size: 20px;
+                            margin-left: 50%;
+                            transform: translate(-30%, 0);
+                        }
+                    }
+                    &:nth-child(2) {
+                        height: auto;
+                        text-align: center;
+                        p {
+                            border-radius: 3px;
+                            border: 1px solid #ccc;
+                            background-color: #dbdbdb;
+                            height: 30px;
+                            line-height: 30px;
+                            color: #000;
+                        }
+                        .content {
+                            margin-top: 10px;
+                            // border: 1px solid #ccc;
+                            .username {
+                                color: red;
+                                float: left;
+                            }
+                            .data {
+                                float: right;
+                                color: red;
+                            }
+                            .comment {
+                                margin-top: 6px;
+                                word-break: break-all;
+                                line-height: 20px;
+                                text-align: start;
+                            }
+                        }
+                    }
+                    &:last-child {
+                        margin-top: 10px;
+                        height: auto;
+                        border: 1px solid #ff9c1d;
+                        &::after {
+                            display: block;
+                            content: "更多评价";
+                            margin-left: 50%;
+                            transform: translate(-20%, 0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// }

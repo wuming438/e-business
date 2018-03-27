@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>国内折扣</title>
+
+    <link rel="icon" href="./images/m.png">
+
+    <!-- 引入图标库 -->
+    <link rel="icon" href="./images/favicon.ico">
+    <!-- 引入mui css样式 -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <!-- bootstrap css样式 -->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <!-- 引入自己的样式css -->
+    <link rel="stylesheet/less" href="./less/national-discount.less">
+    <!-- 引入less的js文件 -->
+    <script src="./lib/less/less.js"></script>
+    <!-- 引入字体图标库 -->
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+
+
+
+
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header id="header">
+        <a href="index.html" class="fa fa-chevron-left return-btn"></a>
+        <span>国内折扣</span>
+        <a href="http://sj.qq.com/myapp/detail.htm?apkName=com.manmanbuy.bijia" class="mui-pull-right">
+            <img src="https://img.alicdn.com/imgextra/i2/690311/TB2beKvaTXYBeNkHFrdXXciuVXa_!!690311.png" alt="">
+        </a>
+
+    </header>
+    <!-- 中间区域 -->
+    <main id="main">
+        <div class="mui-row aaa">
+        </div>
+    </main>
+    <!-- 底部栏 -->
+    <footer id="footer">
+        <div class="f-top mui-row">
+            <a href="" class="mui-col-xs-4">登录</a>
+            <a href="" class="mui-col-xs-4 register">注册</a>
+            <a href="" class="mui-col-xs-4 back-top">
+                <span class="fa fa-arrow-circle-o-up"></span> 返回顶部</a>
+        </div>
+        <div class="f-botom">
+            <span>手机APP下载 </span>
+            <i>慢慢买手机版 -- 掌上比价平台</i>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+    <!-- 引入模板引擎 -->
+    <script id="productListTmp" type="text/html">
+        {{each result as value i}}
+
+        <div class="mui-col-xs-6">
+            <a href="detail.html?productid={{#value.productId}}" data-id={{#value.productId}}>
+                <div class="product-img">
+                    {{#value.productImg}}
+                </div>
+                <div class="product-title">{{#value.productName}}</div>
+                <div class="product-price">{{#value.productPrice}}</div>
+                <div class="product-info">
+                    <span class="product-from">{{#value.productFrom}}</span> |
+                    <span class="product-time">{{#value.productTime}}</span>
+                </div>
+            </a>
+        </div>
+        {{/each}}
+    </script>
+    <!-- 引入jquery文件 -->
+    <script src="./lib/jquery/jquery-1.12.4.min.js"></script>
+    <!-- 引入bootstrap需要的js文件 -->
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <!-- 引入模板需要的js文件 -->
+    <script src="./lib/artTemplate/template.js"></script>
+    <!-- 引入自己js文件 -->
+    <script src="./js/national-discount.js"></script>
+
+    <script src="./lib/jquery/jquery.toTop.min.js"></script>
+</body>
+
+</html>

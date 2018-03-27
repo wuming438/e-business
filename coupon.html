@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="icon" href="./images/icon.icon">
+
+    <!-- 引入mui框架  -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <!-- 引入本页面样式 -->
+    <link rel="stylesheet/less" href="./less/discounts.less">
+    <!--  引入less文件 -->
+    <script src="./lib/less/less.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <header id="header">
+        <a href="./index.html" class="mui-pull-left fa fa-chevron-left"></a>
+        <h4 class="middle">优惠券</h4>
+        <a href="#" class="mui-pull-right">
+            <img src="https://img.alicdn.com/imgextra/i2/690311/TB2beKvaTXYBeNkHFrdXXciuVXa_!!690311.png" alt="">
+        </a>
+    </header>
+    <!-- 主体部分 -->
+    <main id="main">
+        <!-- 产品logo部分 -->
+        <div class="mui-row">
+            <!-- <div class="mui-col-xs-4">
+                <div class="product-logo">
+                    <a href="#">
+                        <img src="http://www.juanlaoda.com/ImageUpload/2013310191729944.jpg" alt="">
+                        <p>肯德基</p>
+                    </a>
+                </div>
+            </div> -->
+        </div>
+            
+    </main>
+     <!-- 菜单部分 -->
+    <div id="navLink">
+            <a href="./index.html">首页</a>
+            <span class="fa fa-angle-right"></span>
+            <a href="#">优惠券</a>
+    </div>
+    
+    <!-- 底部栏 -->
+    <footer id="footer">
+        <div class="f-top mui-row">
+            <a href="" class="mui-col-xs-4">登录</a>
+            <a href="" class="mui-col-xs-4 register">注册</a>
+            <a href="" class="mui-col-xs-4"><span class="fa fa-arrow-circle-o-up"></span>返回顶部</a>
+        </div>
+    </footer>
+
+    <!-- 产品logo模板引擎 -->
+    <script id="productLogoTmp" type="text/html">
+    
+        {{each result as value i}}
+        <div class="mui-col-xs-4">
+                <div class="product-logo">
+                    <a href="{{value.couponLink}}?couponid={{value.couponId}}"
+                     data-id={{value.couponId}} data-title={{value.couponTitle}}>
+                        <img src="{{value.couponImg}}" alt="">
+                        <p>{{value.couponTitle}}</p>
+                    </a>
+                </div>
+            </div>
+        {{/each}}
+
+    </script>
+    <!-- 引入swp -->
+    
+    <!-- 引入模板引擎的js -->
+    <script src="./lib/template/template.js"></script>
+    <!-- 引入muijs -->
+    <script src="./lib/mui/js/mui.js"></script>
+    <!-- 引入jq文件 -->
+    <script src="./lib/jquery/jquery-1.12.4.min.js"></script>
+    <!-- 引入js文件 -->
+    <script src="./js/discounts.js"></script>
+</body>
+</html>
